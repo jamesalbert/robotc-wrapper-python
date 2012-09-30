@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-import Py.Robot
+import Robot
 
-robot = Py.Robot.new()
+robot = Robot.new()
 
 class new:
     def __init__(self):
