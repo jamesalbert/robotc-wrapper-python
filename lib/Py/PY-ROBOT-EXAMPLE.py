@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import Robot
-from Robot import Utils
+import Robot, Utils
 
 robot = Robot.new()
 utils = Utils.new()
