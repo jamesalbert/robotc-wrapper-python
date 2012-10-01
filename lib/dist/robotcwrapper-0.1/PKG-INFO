@@ -1,5 +1,5 @@
 Metadata-Version: 1.1
-Name: robotc-wrapper-python
+Name: robotcwrapper
 Version: 0.1
 Summary: A Python 2.7 wrapper for RobotC and Vex PIC robot
 Home-page: https://github.com/jamesalbert/robotc-wrapper-python
