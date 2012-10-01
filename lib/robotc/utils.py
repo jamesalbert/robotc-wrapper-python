@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 
-import Robot
+import wrapper
 
-robot = Robot.new()
+robot = wrapper.new()
 
-class new:
-    def __init__(self):
-        next
+class robotcwrapperutils:
 
     def SETUP(self):
         robot.pragma(2, "button", "Touch")

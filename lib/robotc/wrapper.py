@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
-class new:
-    def __init__(self):
-        next
+class robotcwrapper:
 
     def start_void(self, name):
         print "void %s() {" % name
