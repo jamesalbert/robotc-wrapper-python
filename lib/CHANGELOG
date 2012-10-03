@@ -9,3 +9,6 @@
 
 0.4
     Wrong lib name in "provides" tab. FIXED
+
+0.5
+    Utils is now fully customizable

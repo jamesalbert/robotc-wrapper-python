@@ -23,6 +23,7 @@
           </li>
           <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
           <li><a href="#LIST-OF-FUNCTIONS">LIST OF FUNCTIONS</a></li>
+          <li><a href="#LIST-OF-FUNCTIONS-FOR-UTILS">LIST OF FUNCTIONS FOR UTILS</a></li>
           <li><a href="#AUTHORS">AUTHORS</a></li>
         </ul>
       </li>
@@ -186,6 +187,45 @@
     call( function )
 
         calls a given function</code></pre>
+
+<h3 id="LIST-OF-FUNCTIONS-FOR-UTILS">LIST OF FUNCTIONS FOR UTILS</h3>
+
+<pre><code>    SETUP( sensor_in, sensor_name, sensor_type, reflect_port, reflect_switch, auto_switch )
+
+        if you&#39;ve written in RobotC before, if you haven&#39;t refer to the docs, consider this:
+
+        SETUP( 2, &quot;button&quot;, &quot;Touch&quot;, 2, true, false )
+
+        ==
+
+        #pragma config(Sensor, in_2, &quot;button&quot;, sensorTouch);
+        bMotorReflected[port2] = true;
+        bAutonomousMode = false;
+
+    FORWARD( port_1, port_2, speed )
+
+        declares a function called &quot;forward&quot; that assigns the given ports the
+        given speed
+
+    REVERSE( port_1, port_2, speed )
+
+        same as FORWARD() but in reverse.
+
+    TURN_LEFT( port_1, port_2, speed, duration )
+
+        now this one does almost the same thing, but there are a couple things
+        to note:
+
+        -port_1 will always be negative
+        -duration is how long for your robot to turn
+
+    TURN_RIGHT( port_1, port_2, speed, duration )
+
+        same as TURN_LEFT()
+
+    SUSPEND( port_1, port_2 )
+
+        stops the two given ports</code></pre>
 
 <h3 id="AUTHORS">AUTHORS</h3>
 
