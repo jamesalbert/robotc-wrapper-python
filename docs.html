@@ -1,0 +1,200 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:kevin@archlinux.org" />
+</head>
+
+<body style="background-color: white">
+
+
+
+<ul id="index">
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>
+            <ul>
+              <li><a href="#NAME">NAME</a></li>
+            </ul>
+          </li>
+          <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+          <li><a href="#LIST-OF-FUNCTIONS">LIST OF FUNCTIONS</a></li>
+          <li><a href="#AUTHORS">AUTHORS</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="NAME">NAME</h4>
+
+<pre><code>    robotc-wrapper - A RobotC wrapper written in Python, designed for the Vex PIC robot.</code></pre>
+
+<h3 id="SYNOPSIS">SYNOPSIS</h3>
+
+<pre><code>    #!/usr/bin/env python
+
+    from robotc import __init__, utils
+
+    shortcut = utils.robotcwrapperutils()
+
+    def create_a_lot_of_voids():
+        shortcut.BASIC_MOVEMENTS()
+
+    robot = __init__.robotcwrapper()
+
+    def create_void():
+        robot.start_void(&quot;function_name&quot;)
+        robot.motor(1, 127)
+        robot.motor(2, 127)
+        robot.end()
+
+    create_a_lot_of_voids()
+    create_void()</code></pre>
+
+<h3 id="LIST-OF-FUNCTIONS">LIST OF FUNCTIONS</h3>
+
+<pre><code>    start_void( name )
+
+        starts a void function in RobotC.
+
+    start_task()
+
+        starts the main task.
+
+    start_if( condition )
+
+        starts an if statement
+
+    start_else_if( condition )
+
+        starts an elseif statement
+
+    if_sound()
+
+        starts an if statement checking if sound is available
+
+    if_active()
+
+        starts an if statement checking if the Vex is active
+
+    start_for( initial_count, end_count )
+
+        starts a for loop
+
+    start_while( condition )
+
+        starts a while loop
+
+    end()
+
+        ends a block ( &quot;}&quot; )
+
+    int_var( name, value )
+
+        declares a integer variable
+
+    char_var( name, value )
+
+        declares a char variable
+
+    long_var( name, value )
+
+        declares a long variable
+
+    battery( name )
+
+        declares a variable, name, with the current battery level
+
+    cos( radians ), sin( radians ), tan( radians )
+
+        used to store value of cosine, sine, and tangent of radians respectively
+
+    d_r( degrees ), r_d( radians )
+
+        used to store value of degrees converted to radians and vise versa
+
+    kill( task )
+
+        declares the death of parameter, task
+
+    mute()
+
+        turns off sounds
+
+    sound( frequency, duration )
+
+        will play a tone with the given params
+
+    tone( tone )
+
+        param tone should be &quot;buzz&quot;, &quot;click&quot;, or &quot;beep&quot;
+
+    sound_power( switch )
+
+        a switch to turn sound on or off, switch should be true or false
+
+    pragma( port, name, sensor )
+
+        equivalent to &quot;#pragma config(Sensor, in2, &quot;button&quot;, sensorTouch);&quot;
+        should be delcared like &quot;pragma(2, &quot;button&quot;, &quot;Touch&quot;)&quot;
+
+    reflect( port, switch )
+
+        reflect a motor, port, if switch is true
+
+    auto( switch )
+
+        autonomous mode if switch is true
+
+    inc_plus( var )
+
+        returns var++
+
+    inc_minus( var )
+
+        returns var--
+
+    motor( port, speed )
+
+        sets up motor, port, to speed, speed
+
+    speed_up( port, speed )
+
+        returns motor, port, speed itself plus ( param ) speed
+
+    clear_time()
+
+        clears timer T1
+
+    time_while( end_time )
+
+        performs a while loop while time is less than or equal to end_time
+
+    wait( duration )
+
+        waits for duration ( in seconds )
+
+    cont( port, channel )
+
+        declares motor, port&#39;s, speed with channel, channel&#39;s, value
+
+    call( function )
+
+        calls a given function</code></pre>
+
+<h3 id="AUTHORS">AUTHORS</h3>
+
+<pre><code>    James Albert &lt;james.albert72@gmail.com&gt;
+    Casey Vega &lt;casey.vega@gmail.com&gt;</code></pre>
+
+
+</body>
+
+</html>
+
+
