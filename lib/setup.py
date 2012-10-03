@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(
-    name = "robotcwrapper",
+    name = "robotc-wrapper",
     packages = ["robotc"],
     version = "0.4",
     description = "A Python 2.7 wrapper for RobotC and Vex PIC robot",
