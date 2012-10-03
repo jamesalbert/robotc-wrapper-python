@@ -6,3 +6,6 @@
 
 0.3
     .3 is the first semi-stable release of robotcwrapper.
+
+0.4
+    Wrong lib name in "provides" tab. FIXED
