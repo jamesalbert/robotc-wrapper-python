@@ -5,7 +5,7 @@ from robotc import __init__, utils
 shortcut = utils.robotcwrapperutils()
 
 def create_a_lot_of_voids():
-    shortcut.BASIC_MOVEMENTS()
+    shortcut.SETUP(2, "button", "Touch", 2, "true", "false")
 
 robot = __init__.robotcwrapper()
 
