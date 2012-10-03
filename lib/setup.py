@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
     name = "robotcwrapper",
     packages = ["robotc"],
-    version = "0.2",
+    version = "0.3",
     description = "A Python 2.7 wrapper for RobotC and Vex PIC robot",
     author = "James Albert",
     author_email = "james.albert72@gmail.com",
