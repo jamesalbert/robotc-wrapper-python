@@ -5,6 +5,4 @@
     Utils had a bug where it was importing a non-existing library. FIXED
 
 0.3
-    First, I apologize for deleting some of my users' builds. I'm a noob when
-    it comes to this, and I finally got things right. .3 is the first semi-
-    stable release of robotcwrapper.
+    .3 is the first semi-stable release of robotcwrapper.
