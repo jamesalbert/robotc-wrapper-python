@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-import wrapper
+import __init__
 
-robot = wrapper.robotcwrapper()
+robot = __init__.robotcwrapper()
 
 class robotcwrapperutils:
 
